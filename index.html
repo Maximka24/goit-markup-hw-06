@@ -62,7 +62,47 @@
 		</div>
 		<div class="backdrop is-hidden" data-modal>
 			<div class="modal">
-				<p></p>
+				<form action="" class="form">
+					<p>Оставьте свои данные, мы вам перезвоним</p>
+					<label class="form-bar">
+						<input type="text" class="form-input" name="name" placeholder=" ">
+						<svg class="svg-modal" width=18px height=18px>
+							<use href="./img/svg-modal.svg#icon-person"></use>
+						</svg>
+						<span class="form-text">Имя</span>
+					</label>
+
+					<label class="form-bar">
+						<input type="tel" class="form-input" name="phone" placeholder=" ">
+						<svg class="svg-modal" width=18px height=18px>
+							<use href="./img/svg-modal.svg#icon-phone"></use>
+						</svg>
+						<span class="form-text">Телефон</span>
+					</label>
+
+					<label class="form-bar">
+						<input type="email" class="form-input" name="mailto" placeholder=" ">
+						<svg class="svg-modal" width=18px height=18px>
+							<use href="./img/svg-modal.svg#icon-email"></use>
+						</svg>
+						<span class="form-text">Почта</span>
+					</label>
+
+					<label class="form-bar-textarea">
+						<textarea class="form-textarea" name="textarea" rows="6" placeholder=" "></textarea>
+						<span class="text-textarea">Комментарий</span>
+					</label>
+
+					<label class="form-checkbox">
+						<input class="checkbox" type="checkbox" name="contract" value="reading" required>
+						<span class="icon-check"></span>
+						<span class="text-checkbox">Соглашаюсь с рассылкой и принимаю
+							<a href="#">Условия договора</a>
+						</span>
+					</label>
+
+					<button class="submit" type="submit">Отправить</button>
+				</form>
 				<button class="button-modal" data-modal-close type="button">X</button>
 			</div>
 		</div>
