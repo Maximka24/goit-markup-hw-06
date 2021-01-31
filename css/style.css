@@ -268,6 +268,7 @@ header .container {
 
 .button-modal {
 	position: absolute;
+	padding: 0;
 	top: 0;
 	right: 0;
 	height: 30px;
@@ -516,6 +517,7 @@ header .container {
 	padding-top: 60px;
 	padding-bottom: 60px;
 }
+
 .footer-bg .logo {
 	margin-bottom: 20px;
 }
@@ -523,6 +525,11 @@ header .container {
 	display: flex;
 	align-items: baseline;
 	justify-content: space-between;
+	margin-left: auto;
+	margin-right: auto;
+	width: 1200px;
+	padding-left: 15px;
+	padding-right: 15px;
 }
 
 .address {
@@ -733,7 +740,8 @@ header .container {
 .form {
 	padding: 40px;
 }
-.form p {
+.form h1 {
+	margin: 0;
 	font-family: Roboto;
 	font-style: normal;
 	font-weight: bold;
@@ -874,6 +882,9 @@ header .container {
 	background-origin: border-box;
 	border: 0;
 }
+.checkbox:hover ~ .text-checkbox {
+	cursor: pointer;
+}
 .icon-check {
 	margin-right: 8px;
 	width: 16px;
@@ -888,6 +899,10 @@ header .container {
 	line-height: 1.71;
 	letter-spacing: 0.03em;
 	color: var(--main-formcolor-text);
+
+	transition-property: cursor;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .text-checkbox a {
