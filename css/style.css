@@ -279,13 +279,17 @@ header .container {
 	margin-top: 8px;
 	background: var(--bg-modal);
 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
 	transition-property: color;
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-modal:focus,
 .button-modal:hover {
-	color: var(--color-tartet);
+	fill: var(--color-tartet);
 }
 
 /* / БЛОК ГЕРОЙ */
@@ -885,13 +889,24 @@ header .container {
 .checkbox:hover ~ .text-checkbox {
 	cursor: pointer;
 }
+.checkbox:focus ~ .icon-check {
+	border-radius: 2px;
+	border: 2px solid var(--focus-form-color);
+}
+
 .icon-check {
 	margin-right: 8px;
 	width: 16px;
 	height: 15px;
 	border: 2px solid #212121;
 	border-radius: 2px;
+
+	transition-property: outline, border-radius;
+	transition-duration: 250ms, 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1),
+		cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .text-checkbox {
 	font-style: normal;
 	font-weight: normal;
